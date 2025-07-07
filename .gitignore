@@ -1,0 +1,7 @@
+echo "# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv
