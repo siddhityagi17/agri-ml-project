@@ -69,9 +69,9 @@ def get_pest_risk(confidence: float) -> str:
 MODELS = {}
 try:
     MODELS = {
-        "soil": tf.keras.models.load_model("models/final_soil_model.keras"),
-        "plant": tf.keras.models.load_model("models/plant_disease_model.keras"),
-        "pest": tf.keras.models.load_model("models/final_pest_model.keras")
+        "soil": tf.keras.models.load_model("models/final_soil_model.keras", compile=False),
+        "plant": tf.keras.models.load_model("models/plant_disease_model.keras", compile=False),
+        "pest": tf.keras.models.load_model("models/final_pest_model.keras", compile=False)
     }
     logger.info("Models loaded successfully")
     for name, model in MODELS.items():
@@ -105,6 +105,9 @@ async def health_check():
         "models_loaded": list(MODELS.keys()),
         "api_version": "1.0"
     }
+@app.get("/health")
+def health_check():
+    return {"status": "healthy"}
 
 @app.post("/predict")
 async def predict(
