@@ -26,12 +26,3 @@ AI/ML: TensorFlow / Keras, OpenCV, NumPy, Pandas
 3.Interactive dashboard for plant health monitoring
 
 4.Modern and responsive UI with Tailwind CSS
-
-Deployed on Netlify for easy access
-
-🚀 **Deployment**
-
-🔗 Live Website: https://share.google/42jwtsNhojiWqKHmk 
-
-
-
