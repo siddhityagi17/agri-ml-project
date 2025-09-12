@@ -7,7 +7,7 @@ It uses Convolutional Neural Networks (CNNs) to:
 Predict soil tilling requirements
 Detect plant diseases
 Identify pest infestations
-The trained models are integrated into a React + Vite + Tailwind frontend with a FastAPI backend, providing a real-time monitoring dashboard.
+The trained models are integrated into a React frontend with a FastAPI backend, providing a real-time monitoring dashboard.
 
 ⚙ **Tech Stack**
 
@@ -26,4 +26,5 @@ AI/ML: TensorFlow , CNN, YOLO8V
 3.Interactive dashboard for plant health monitoring
 
 4.Modern and responsive UI with Tailwind CSS
+
 
